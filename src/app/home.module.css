@@ -1,0 +1,24 @@
+
+.bb{
+    background: linear-gradient(rgba(255,192,203,0.6),rgba(173,216,230,0.8)), url("https://cdn.thevoiceoffashion.com/bodyblocks/628f3768efd12.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.anime{
+    animation: animMenu 0.2s linear;
+}
+
+@keyframes animMenu{
+0%{
+    width: 0%;
+}
+30%{
+    width: 30%;
+}60%{
+    width: 60%;
+}
+100%{
+    width: 90%;
+}
+}
