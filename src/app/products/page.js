@@ -1,14 +1,15 @@
 "use client"
 import RegularProduct from '@/components/product/RegularProduct'
+import { useRouter } from 'next/navigation'
 import React, { useState } from 'react'
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai'
 
 function page() {
   const [openmenu, setOpenMenu] = useState(false)
   const [sort, setSort] = useState("NEW")
-  const router = "hello boy !"
+  const router = useRouter()
   return (
-    <div className='flex min-h-screen flex-col items-center gap-5 bg-[#fbf9f9] bg-[url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIUPx6MYgjzeJgj7Q4-Tdai_yP16ejHzalEY5emgACA&s")]'>
+      <div className='flex min-h-screen flex-col items-center gap-5 bg-[#fbf9f9] bg-[url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThIUPx6MYgjzeJgj7Q4-Tdai_yP16ejHzalEY5emgACA&s")]'>
       <div className='flex items-center justify-center gap-5 mt-8'>
         <b className='text-[balck]'>ADD FILTERS</b>
         <input type='number' placeholder='min' className='border outline-none py-2 px-3 rounded-sm' />

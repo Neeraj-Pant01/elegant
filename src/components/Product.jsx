@@ -1,9 +1,12 @@
+"use client"
 import React from 'react'
 import QuantityBtns from './QuantityBtns'
+import { useRouter } from 'next/navigation'
 
 const Product = () => {
+  const router = useRouter()
   return (
-    <div className='flex flex-col md:w-[20%] w-[45%] flex-wrap mb-8 cursor-pointer border-2 px-2 py-2 border-[black] rounded-md'>
+    <div className='flex flex-col md:w-[20%] w-[45%] flex-wrap mb-8 cursor-pointer border-2 px-2 py-2 border-[black] rounded-md' onClick={()=>router.push(`/products/1`)}>
       <img src='https://etimg.etb2bimg.com/photo/103689045.cms' className='border rounded-md'/>
       <div className='flex flex-col gap-2'>
         <b className='md:mb-5 '>PRODUCT NAME</b>

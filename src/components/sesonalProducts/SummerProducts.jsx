@@ -1,8 +1,11 @@
+"use client"
+import { useRouter } from 'next/navigation'
 import React from 'react'
 
 const SummerProducts = () => {
+  const router = useRouter()
   return (
-    <div className='flex flex-col w-[90%] md:w-[300px] bg-[white] items-center border py-4 mb-4 px-2 cursor-pointer rounded-md'>
+    <div className='flex flex-col w-[90%] md:w-[300px] bg-[white] items-center border py-4 mb-4 px-2 cursor-pointer rounded-md' onClick={()=>router.push(`/products/1`)}>
       <img className='w-[90%] rounded-md' src='https://res.cloudinary.com/purnesh/image/upload/w_540,f_auto,q_auto:eco,c_limit/11618206186775.jpg' alt='product-image' />
       <div className='flex items-center flex-col'>
         <div className='flex items-center justify-center gap-4 mt-2'>

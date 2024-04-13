@@ -1,6 +1,7 @@
 import QuantityBtns from '@/components/QuantityBtns'
 import Addreview from '@/components/addreview/Addreview'
 import Review from '@/components/review/Review'
+import OrderButton from '@/components/sub-components/OrderButton'
 import React from 'react'
 
 const page = () => {
@@ -21,18 +22,17 @@ const page = () => {
             <div className='flex-col flex-1 flex items-center'>
                 <h1 className='text-[lightseagreen] md:text-xl my-4'>ENTER DELIVERY DETAILS </h1>
                 <form className='flex w-[80%] flex-col gap-3'>
-                    <input type='text' className='border outline-none px-4 py-2' placeholder='enter mobile number' />
+                    <input type='text' className='border outline-none px-4 py-2 text-[grey]' placeholder='enter mobile number' />
 
-                    <input type='text' className='border outline-none px-4 py-2' placeholder='enter state' />
+                    <input type='text' className='border outline-none px-4 py-2 text-[grey]' placeholder='enter state' />
 
-                    <input type='text' className='border outline-none px-4 py-2' placeholder='enter city' />
+                    <input type='text' className='border outline-none px-4 py-2 text-[grey]' placeholder='enter city' />
 
-                    <input type='text' className='border outline-none px-4 py-2' placeholder='enter pincode' />
+                    <input type='text' className='border outline-none px-4 py-2 text-[grey]' placeholder='enter pincode' />
 
-                    <input type='text' className='border outline-none px-4 py-2' placeholder='enter nearest landmark' />
-                    <textarea type='text' className='border resize-none h-[100px] outline-none px-4 py-2' placeholder='enter the custom address like home no , street etc' />
-
-                    <button className='bg-[lightblue] py-2 px-2'>PLACE ORDER</button>
+                    <input type='text' className='border outline-none px-4 py-2 text-[grey]' placeholder='enter nearest landmark' />
+                    <textarea type='text' className='border text-[grey] resize-none h-[100px] outline-none px-4 py-2' placeholder='enter the custom address like home no , street etc' />
+                    <OrderButton />
                 </form>
 
                 <div className='flex flex-col md:mt-20'>
@@ -40,7 +40,6 @@ const page = () => {
                 <p className='text-[grey] text-center' style={{fontFamily:"cursive"}}>see what our community says about this product</p>
 
                 <Addreview />
-
                 <div className='flex flex-col items-center mt-14 gap-5'>
                     <Review />
                     <Review />

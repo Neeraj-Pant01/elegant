@@ -7,6 +7,14 @@ import Summer from '@/components/posters/Summer'
 const Home = () => {
   return (
     <>
+
+<div className='flex flex-col items-center justify-center py-5 md:flex-row bg-[white] gap-3 mt-5 w-fit'>
+      <Poster />
+      <Poster />
+      <Poster />
+      <Poster />
+    </div>
+
     <div className={`${home.bb} homepage min-h-screen`}>
       <div className='flex flex-col items-center py-20'>
         <h1 className='text-xl text-center md:text-5xl font-bold text-[rgba(0,0,0,0.7)]'>"REMEMBER BEAUTY IS FROM INSIDE"</h1>
@@ -18,12 +26,7 @@ const Home = () => {
       <p className='text-md md:text2xl uppercase text-[rgba(0,0,0,0.7)] text-center'>Don't compare yourself; instead, strive to become your best self.</p>
       </div>
     </div>
-    <div className='flex flex-col items-center justify-center py-5 md:flex-row bg-[white] gap-3 mt-5 w-fit'>
-      <Poster />
-      <Poster />
-      <Poster />
-      <Poster />
-    </div>
+
     <div className='flex flex-col items-center justify-center mt-20 gap-5'>
       <h1 className='text-[grey] text-xl md:text-2xl font-bold'>OUR POPULAR PRODUCTS</h1>
       <div className='flex items-center justify-center flex-wrap gap-5 w-screen overflow-hidden'>
